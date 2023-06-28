@@ -2213,6 +2213,12 @@ export const Seriousnes: Contributor = {
     },
   ],
 };
+export const Divado: Contributor = {
+  nickname: 'Divado',
+  github: 'divado',
+  discord: 'divado',
+  avatar: avatar('Divado-avatar.jpg'),
+};
 
 export const CodersKitchen: Contributor = {
   nickname: 'coders-kitchen',
