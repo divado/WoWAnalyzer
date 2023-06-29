@@ -11,6 +11,7 @@ import PreparationRuleAnalyzer from 'parser/classic/modules/features/Checklist/P
 import AlwaysBeCasting from '../features/AlwaysBeCasting';
 // Spells
 // import SpellName from './modules/spells';
+import PowerWordShield from '../spells/PowerWordShield';
 
 class Checklist extends BaseChecklist {
   static dependencies = {
@@ -24,6 +25,7 @@ class Checklist extends BaseChecklist {
     // Features
     alwaysBeCasting: AlwaysBeCasting,
     // Spells
+    powerWordShield: PowerWordShield,
   };
 
   // Shared
@@ -35,6 +37,7 @@ class Checklist extends BaseChecklist {
   // Features
   protected alwaysBeCasting!: AlwaysBeCasting;
   // Spells
+  protected powerWordShield!: PowerWordShield;
 
   render() {
     return (
@@ -48,7 +51,8 @@ class Checklist extends BaseChecklist {
             this.alwaysBeCasting.nonHealingTimeSuggestionThresholds,
           downtimeSuggestionThresholds: this.alwaysBeCasting.downtimeSuggestionThresholds,
           // Spells
-          // spellName: this.spellName.uptimeSuggestionThresholds,
+          // spellName: this.spellName.uptimeSuggestionThresholds
+          powerWordShield: this.powerWordShield.uptimeSuggestionThresholds,
         }}
       />
     );

@@ -18,6 +18,7 @@ import HealingEfficiencyDetails from './modules/features/HealingEfficiencyDetail
 import HealingEfficiencyTracker from './modules/features/HealingEfficiencyTracker';
 // Spells
 // import SpellName from './modules/spells';
+import PowerWordShield from './modules/spells/PowerWordShield';
 
 class CombatLogParser extends BaseCombatLogParser {
   static specModules = {
@@ -38,6 +39,7 @@ class CombatLogParser extends BaseCombatLogParser {
     hpmDetails: HealingEfficiencyDetails,
     // Spells
     // spellName: SpellName,
+    powerWordShield: PowerWordShield,
   };
 }
 
